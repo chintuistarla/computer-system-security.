@@ -33,8 +33,3 @@ def initSSLClient(port):
     s = SSL.Connection(ctx, socket.socket(socket.AF_INET, socket.SOCK_STREAM))
     s.connect(('localhost', port))
     return s
-
-from OpenSSL import SSL
-
-def verify_cb(conn, cert, errnum, depth, ok):
-    return ok
