@@ -2,7 +2,7 @@ import sys, socket, select, os
 from mk_cert_files import *
 from OpenSSL import SSL
 
-#Creates a certificate request and sends it as a PEM encoded string to the CA/server
+#Created a certificate request and sends it as a PEM encoded string to the CA/server
 def getCertificate():
     s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     s.settimeout(2)
