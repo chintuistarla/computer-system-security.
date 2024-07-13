@@ -7,7 +7,7 @@ from cryptography.hazmat.backends import default_backend
 from mk_cert_files import *
 from OpenSSL import SSL
 
-#Own modules
+# Import necessary
 from dh import *
 from messencrypt import *
 from sign import *
